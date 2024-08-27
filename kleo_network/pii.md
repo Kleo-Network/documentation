@@ -1,5 +1,7 @@
 # Personally Identifiable Information (PII)
 
+We never share personally Identifiable Information with anyone. 
+
 - Full name
 - Social Security number
 - Date of birth
