@@ -1,6 +1,6 @@
 {
   "version": "3.5.0",
-  "created": "2024-08-26T06:47:54Z",
+  "created": "2024-08-27T07:24:31Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -9,19 +9,56 @@
       "path": "404.html"
     },
     {
-      "path": "guides/index.html"
+      "path": "dapp_sdk/personalisation/index.html"
     },
     {
-      "path": "guides/kleosdk/index.html"
+      "path": "dapp_sdk/sdk/index.html"
     },
     {
-      "path": "guides/token/index.html"
+      "path": "dapp_sdk/use_cases/index.html"
     },
     {
-      "path": "guides/tutorial/index.html"
+      "path": "extension_sdk_/benefits/index.html"
+    },
+    {
+      "path": "extension_sdk_/partners/index.html"
+    },
+    {
+      "path": "extension_sdk_/sdk/index.html"
+    },
+    {
+      "path": "guides/index.html",
+      "old": true
+    },
+    {
+      "path": "guides/kleosdk/index.html",
+      "old": true
+    },
+    {
+      "path": "guides/token/index.html",
+      "old": true
+    },
+    {
+      "path": "guides/tutorial/index.html",
+      "old": true
     },
     {
       "path": "index.html"
+    },
+    {
+      "path": "kleo_network/kleo/index.html"
+    },
+    {
+      "path": "kleo_network/kleosdk/index.html"
+    },
+    {
+      "path": "kleo_network/pii/index.html"
+    },
+    {
+      "path": "kleo_network/token/index.html"
+    },
+    {
+      "path": "kleo_network/tutorial/index.html"
     },
     {
       "path": "resources/css/retype.css"
