@@ -1,6 +1,6 @@
 {
   "version": "3.5.0",
-  "created": "2024-08-27T07:24:31Z",
+  "created": "2024-08-28T09:30:51Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -43,6 +43,9 @@
       "old": true
     },
     {
+      "path": "images/her.jpeg"
+    },
+    {
       "path": "index.html"
     },
     {
@@ -58,7 +61,8 @@
       "path": "kleo_network/token/index.html"
     },
     {
-      "path": "kleo_network/tutorial/index.html"
+      "path": "kleo_network/tutorial/index.html",
+      "old": true
     },
     {
       "path": "resources/css/retype.css"

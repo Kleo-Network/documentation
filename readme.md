@@ -1,3 +1,5 @@
+![](/images/her.jpeg)
+
 # Kleo Network Guide. 
 This is documentation for understanding the Kleo Network architecture and building on top of it. It addresses issues such as ownership, privacy, token distribution, data decryption and use cases for Kleo. 
 
