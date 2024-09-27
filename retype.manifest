@@ -1,6 +1,6 @@
 {
-  "version": "3.5.0",
-  "created": "2024-08-28T09:30:51Z",
+  "version": "3.6.0",
+  "created": "2024-09-27T12:47:18Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -9,7 +9,8 @@
       "path": "404.html"
     },
     {
-      "path": "dapp_sdk/personalisation/index.html"
+      "path": "dapp_sdk/personalisation/index.html",
+      "old": true
     },
     {
       "path": "dapp_sdk/sdk/index.html"

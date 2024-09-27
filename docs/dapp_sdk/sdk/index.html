@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.778152649066">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.780756436712">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.5.0">
+    <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Kleo SDK for DAPP Personalisation</title>
-    <meta name="title" content="Kleo SDK for DAPP Personalisation">
+    <title>Kleo SDK</title>
+    <meta name="title" content="Kleo SDK">
+    <meta name="description" content="Kleo's DATA DAO is open to building new projects from developers.">
 
     <!-- Canonical -->
     <link rel="canonical" href="/dapp_sdk/sdk/">
@@ -18,20 +19,22 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="/dapp_sdk/sdk/">
-    <meta property="og:title" content="Kleo SDK for DAPP Personalisation">
+    <meta property="og:title" content="Kleo SDK">
+    <meta property="og:description" content="Kleo's DATA DAO is open to building new projects from developers.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="/dapp_sdk/sdk/">
-    <meta property="twitter:title" content="Kleo SDK for DAPP Personalisation">
+    <meta property="twitter:title" content="Kleo SDK">
+    <meta property="twitter:description" content="Kleo's DATA DAO is open to building new projects from developers.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.778152649066" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.780756436712" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.778152649066" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.778152649066" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.780756436712" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.780756436712" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -214,12 +217,80 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="kleo-sdk-for-dapp-personalisation" class="break-words">
+<doc-anchor-target id="kleo-sdk" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#kleo-sdk-for-dapp-personalisation">#</doc-anchor-trigger>
-        <span>Kleo SDK for DAPP Personalisation</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#kleo-sdk">#</doc-anchor-trigger>
+        <span>Kleo SDK</span>
     </h1>
 </doc-anchor-target>
+<p>Kleo&#x27;s DATA DAO is open to building new projects from developers.</p>
+<p>Integrating KLEO SDK is simple,</p>
+<ul>
+<li>The first step is to install the KLEO SDK!</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">npm i kleo-sdk</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="accessing-personal-data-identity-information">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#accessing-personal-data-identity-information">#</doc-anchor-trigger>
+        <span>Accessing Personal Data Identity Information</span>
+    </h4>
+</doc-anchor-target>
+<p>More about specific user. You can ask specific user questions such as,</p>
+<ul>
+<li>What kind of movies has he seen?</li>
+<li>What sports is he interested in?</li>
+<li>Is the user tracking bitcoin and cryptocurrency prices?</li>
+<li>Is the user a web3 degen, share the NFTs he might have checked out?</li>
+<li>What videos has the user seen recently?</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">const userInfo = await Kleo.userInfo(
+    user:'0xABV', 
+    message:'has he searched about cricket world cup and betting games?')</code></pre>
+</doc-codeblock></div>
+<p>Based on user settings and preferences it might respond in three possible answers,</p>
+<ul>
+<li>Share you the result</li>
+<li>Respond No</li>
+<li>Share amount and user address</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">{&quot;amount&quot;: 5, &quot;address&quot;: 0x573aFF24788A7c28dE5E94C945e7b46a6f16f7C1}</code></pre>
+</doc-codeblock></div>
+<p>Once you have made the transaction to the address, you need to call the same function again,</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">const userInfo = await Kleo.userInfo(
+    user:'0xABV', 
+    message:'has he searched about cricket world cup and betting games?', 
+    hash: 'transaction hash', 
+    signature: 'signed message from the sender of transaction')
+</code></pre>
+</doc-codeblock></div>
+<p>this time to get the right user data based on your questions.</p>
+<doc-anchor-target id="accessing-data-pool-insights">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#accessing-data-pool-insights">#</doc-anchor-trigger>
+        <span>Accessing Data Pool Insights</span>
+    </h4>
+</doc-anchor-target>
+<p>Kleo Data DAO Pools information of multiple users so there can be insights generated about multiple users, not only insights but Kleo can allow generation of powerful models on specific topic as well.</p>
+<p>Here is how you can seek insights on multiple users&#x27; datasets&#x27;</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">const kleoSDK = await Kleo.pool(
+    message: 'trading workflow of users',
+    userLimit: 100
+)</code></pre>
+</doc-codeblock></div>
+<p>similarly,</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">const kleoSDK = await Kleo.pool(
+    message: 'shopping cart information',
+    userLimit: 1000
+)</code></pre>
+</doc-codeblock></div>
+<p>The resulting will be json data of trading worklow of 100 users anonymized.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -239,10 +310,10 @@
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../dapp_sdk/personalisation/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../dapp_sdk/use_cases/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Personalisation</span>
+                                                <span class="block mt-1">Use Cases for using DAPP Personalisation using Kleo SDK.</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -286,6 +357,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Kleo SDK for DAPP Personalisation", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Kleo SDK", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
