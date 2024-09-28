@@ -21,4 +21,4 @@ It's ensured that these cards are impossible to correlate to original informatio
 This depends on requirement of the data. Kleo and VANA DAO will come up with a proof of contribution which will then decide on user contribution tokens/$ amount will be shared.  
 
 #### Step 4: Lets' Earn
-Share and earn boys, share and earn!
+You can claim your points from our dashboard to earn KLEO points!
