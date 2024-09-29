@@ -1,4 +1,10 @@
-# Personally Identifiable Information (PII)
+---
+label: Personally Identifiable Information
+layout: page
+order: 300
+---
+
+# Remove Personally Identifiable Information (PII)
 
 We never share personally Identifiable Information with anyone. 
 

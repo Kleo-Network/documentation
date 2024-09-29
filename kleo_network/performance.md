@@ -1,13 +1,10 @@
-# About Kleo Network
-Kleo Network is a Data Liquidity Provider (DLP) for [VANA Protocol](https://vana.org/). We want users to own their own consumption data with help of an extension. 
-
-## Benefits of owning this data
-Kleo Network and VANA wants you to have equity in AI agents, data marketplaces, data aggregators where community created data is being utilised to drive economic value. Kleo has firm belief that this is unfair to the community, and thus should be addressed immediately. 
-
-
-**We want your data to go and work for you while you sleep.**
-
-## How does this work?
+---
+label: Privacy and Performance
+layout: page
+order: 800
+---
+# Privacy and Performance
+![](/images/privacy.png)
 
 #### Step 1: Remove PII
 Kleo is a simple extension which can be installed in any extension. We first remove all the Personally Identifiable Information (Names, Emails, Phones, Addresses, etc. [FULL LIST](/kleo_network/pii) ) - this makes your entire data psuedoanonymous, and thus cannot be triangulated back to the user. This is ensured with help of LLMs (Large Language Models). 
