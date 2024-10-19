@@ -3,10 +3,18 @@ label: Personally Identifiable Information
 layout: page
 order: 300
 ---
+# Privacy
+We are extremely mindful of not leaking any sensitive information. This is why there are multiple checks established, 
+- Remove PII using native model. 
+- LLMs check collected data for other sensitive information.
+- LLMs check prompts and resulting data.   
+- Custom Model to check for triangulation with intent
 
-# Remove Personally Identifiable Information (PII)
+Apart from personally identifiable information we also do not store any **ADULT CONTENT** through our extension. You can choose to include more categories using our settings section of 'My Data'. 
 
-We never share personally Identifiable Information with anyone. 
+### Remove Personally Identifiable Information (PII)
+
+Our existing model is present to never share personally Identifiable Information with anyone. These are the fields that we do not collect. 
 
 - Full name
 - Social Security number
